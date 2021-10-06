@@ -26,25 +26,37 @@ h3 {
 }
 
 .header {
-  background-color: #333;
+  background-color: rgb(0, 116, 217, 0.75);
   text-align: center;
-  font-size: 64px;
+  font-size: 48px;
   color: #fff;
   padding: 10px 0;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   flex: 1;
+  font-size: 32px;
+  color: #333;
+  padding: 10px;
+}
+
+.card {
+  width: 50%;
+  background-color: rgb(127, 219, 255, 0.5);
+  border: 1px #fff solid;
+  border-radius: 8px;
+  padding: 50px;
   text-align: center;
-  font-size: 128px;
-  color: #fff;
-  padding: 10px 0;
 }
 
 .footer {
-  background-color: #333;
+  background-color: rgb(0, 116, 217, 0.75);
   text-align: center;
-  font-size: 64px;
+  font-size: 32px;
   color: #fff;
   padding: 10px 0;
 }
