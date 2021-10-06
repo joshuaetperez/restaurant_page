@@ -10,7 +10,8 @@ body {
   margin: 0;
 }
 
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
@@ -90,4 +91,33 @@ li {
 
 .disclaimer {
   font-size: 12px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px #fff solid;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin: 30px;
+  /* padding: 50px;
+  margin: 20px 0;
+  text-align: center; */
+}
+
+.menu-card h4 {
+  font-size: 24px;
+}
+
+.menu-card p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.menu-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
