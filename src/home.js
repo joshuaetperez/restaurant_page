@@ -13,24 +13,24 @@ export default function displayHome() {
     // Navbar
     const navDiv = document.createElement("div");
     navDiv.classList.add("navbar");
-    const tabList = document.createElement("ul");
-    const tabHome = document.createElement("li");
-    const tabMenu = document.createElement("li");
+    const listTab = document.createElement("ul");
+    const homeTab = document.createElement("li");
+    const menuTab = document.createElement("li");
     const tabContact = document.createElement("li");
     const homeButton = document.createElement("span");
     const menuButton = document.createElement("span");
     const contactButton = document.createElement("span");
-    tabHome.classList.add("selected-tab");
+    homeTab.classList.add("selected-tab");
     homeButton.textContent = "Home";
     menuButton.textContent = "Menu";
     contactButton.textContent = "Contact";
-    tabHome.appendChild(homeButton);
-    tabMenu.appendChild(menuButton);
+    homeTab.appendChild(homeButton);
+    menuTab.appendChild(menuButton);
     tabContact.appendChild(contactButton);
-    tabList.appendChild(tabHome);
-    tabList.appendChild(tabMenu);
-    tabList.appendChild(tabContact);
-    navDiv.appendChild(tabList);
+    listTab.appendChild(homeTab);
+    listTab.appendChild(menuTab);
+    listTab.appendChild(tabContact);
+    navDiv.appendChild(listTab);
 
     // Middle container
     const containerDiv = document.createElement("div");
