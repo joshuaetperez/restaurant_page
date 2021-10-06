@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  background: url('./restaurant_background.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  text-align: center;
+  font-size: 64px;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  flex: 1;
+  text-align: center;
+  font-size: 128px;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer {
+  background-color: #333;
+  text-align: center;
+  font-size: 64px;
+  color: #fff;
+  padding: 10px 0;
+}
