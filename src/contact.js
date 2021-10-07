@@ -3,35 +3,6 @@ import './style.css';
 export default function displayContact() {
   const contentDiv = document.querySelector("#content");
 
-  // Header
-  const headerDiv = document.createElement("div");
-  const headingText = document.createElement("h3");
-  headerDiv.classList.add("header");
-  headingText.innerText = "Zenith";
-  headerDiv.appendChild(headingText);
-
-  // Navbar
-  const navDiv = document.createElement("div");
-  const listTab = document.createElement("ul");
-  const homeTab = document.createElement("li");
-  const menuTab = document.createElement("li");
-  const contactTab = document.createElement("li");
-  const homeButton = document.createElement("span");
-  const menuButton = document.createElement("span");
-  const contactButton = document.createElement("span");
-  navDiv.classList.add("navbar");
-  contactTab.classList.add("selected-tab");
-  homeButton.textContent = "Home";
-  menuButton.textContent = "Menu";
-  contactButton.textContent = "Contact";
-  homeTab.appendChild(homeButton);
-  menuTab.appendChild(menuButton);
-  contactTab.appendChild(contactButton);
-  listTab.appendChild(homeTab);
-  listTab.appendChild(menuTab);
-  listTab.appendChild(contactTab);
-  navDiv.appendChild(listTab);
-
   // Middle container
   const containerDiv = document.createElement("div");
   containerDiv.classList.add("container");
@@ -58,8 +29,6 @@ export default function displayContact() {
   footerDiv.appendChild(disclaimerDiv);
 
   // Append to contentDiv
-  contentDiv.appendChild(headerDiv);
-  contentDiv.appendChild(navDiv);
   contentDiv.appendChild(containerDiv);
   contentDiv.appendChild(footerDiv);
 }
