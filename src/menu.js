@@ -72,7 +72,7 @@ export default function displayMenu() {
   waterGlassImg.classList.add("menu-image");
   waterGlassImg.src = WaterGlass;
   waterGlassHeadingText.textContent = "A Glass of Water";
-  waterGlassDescriptionText.textContent = "Imagine coming to such a luxurious place and ordering water. If you order this, I have instructed the waiter/waitress to throw you out the restaurant into the forest where no one will see the body.";
+  waterGlassDescriptionText.innerHTML = `Imagine going to a luxurious place and ordering water. Just go order the ${"fruit punch".strike()} ambrosia instead.`;
   waterGlassCard.appendChild(waterGlassHeadingText);
   waterGlassCard.appendChild(waterGlassDescriptionText);
   waterGlassCard.appendChild(waterGlassImg);
@@ -83,6 +83,7 @@ export default function displayMenu() {
 
   // Entrée Cards
   const entreeHeader = document.createElement("h3");
+  entreeHeader.classList.add("menu-heading-margin");
   entreeHeader.textContent = "Entrées";
 
   const saladCard = document.createElement("div");
@@ -131,6 +132,7 @@ export default function displayMenu() {
 
   // Desert Cards
   const desertHeader = document.createElement("h3");
+  desertHeader.classList.add("menu-heading-margin");
   desertHeader.textContent = "Deserts";
 
   const cakeCard = document.createElement("div");
@@ -140,7 +142,7 @@ export default function displayMenu() {
   cakeCard.classList.add("menu-card");
   cakeImg.classList.add("menu-image");
   cakeImg.src = Cake;
-  cakeHeadingText.textContent = "Coffee Cake";
+  cakeHeadingText.textContent = "Celestial Cake";
   cakeDescriptionText.textContent = "A cake of the highest caliber. Everything about this cake is absolutely divine. A desert that will make you feel like you are truly above the heavens. CURRENTLY OUT OF STOCK.";
   cakeCard.appendChild(cakeHeadingText);
   cakeCard.appendChild(cakeDescriptionText);
