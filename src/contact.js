@@ -1,6 +1,6 @@
 import './style.css';
 
-export default function displayHome() {
+export default function displayContact() {
   const contentDiv = document.querySelector("#content");
 
   // Header
@@ -20,7 +20,7 @@ export default function displayHome() {
   const menuButton = document.createElement("span");
   const contactButton = document.createElement("span");
   navDiv.classList.add("navbar");
-  homeTab.classList.add("selected-tab");
+  contactTab.classList.add("selected-tab");
   homeButton.textContent = "Home";
   menuButton.textContent = "Menu";
   contactButton.textContent = "Contact";
@@ -38,8 +38,14 @@ export default function displayHome() {
 
   // Card
   const cardDiv = document.createElement("div");
+  const phoneDiv = document.createElement("div");
+  const emailDiv = document.createElement("div");
   cardDiv.classList.add("card");
-  cardDiv.textContent = "Welcome to Zenith, a towering restaurant floating above the heavens! Eat at one of the world's finest establishments while taking a look at the most beautiful sights from above!";
+  phoneDiv.textContent = "Phone: 999-999-9999";
+  emailDiv.textContent = "Email: zenith@skyhigh.com";
+
+  cardDiv.appendChild(phoneDiv);
+  cardDiv.appendChild(emailDiv);
   containerDiv.appendChild(cardDiv);
 
   // Footer

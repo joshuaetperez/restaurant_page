@@ -22,7 +22,7 @@ export default function displayMenu() {
   const listTab = document.createElement("ul");
   const homeTab = document.createElement("li");
   const menuTab = document.createElement("li");
-  const tabContact = document.createElement("li");
+  const contactTab = document.createElement("li");
   const homeButton = document.createElement("span");
   const menuButton = document.createElement("span");
   const contactButton = document.createElement("span");
@@ -33,10 +33,10 @@ export default function displayMenu() {
   contactButton.textContent = "Contact";
   homeTab.appendChild(homeButton);
   menuTab.appendChild(menuButton);
-  tabContact.appendChild(contactButton);
+  contactTab.appendChild(contactButton);
   listTab.appendChild(homeTab);
   listTab.appendChild(menuTab);
-  listTab.appendChild(tabContact);
+  listTab.appendChild(contactTab);
   navDiv.appendChild(listTab);
 
   // Middle container
