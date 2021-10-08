@@ -1,0 +1,1 @@
+This is a fake restaurant website created for practice and portfolio purposes.
