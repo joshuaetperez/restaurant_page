@@ -30,7 +30,7 @@ export default function displayMenu() {
   fruitPunchImg.classList.add("menu-image");
   fruitPunchImg.src = FruitPunch;
   fruitPunchHeadingText.textContent = "Ambrosia, the Drink of the Gods";
-  fruitPunchDescriptionText.textContent = "The Drink of the Gods themselves. Definetely not just regular fruit punch. Not at all. Don't be ridiculous.";
+  fruitPunchDescriptionText.textContent = "The Drink of the Gods themselves. Definitely not just regular fruit punch. Not at all. Don't be ridiculous.";
   fruitPunchCard.appendChild(fruitPunchHeadingText);
   fruitPunchCard.appendChild(fruitPunchDescriptionText);
   fruitPunchCard.appendChild(fruitPunchImg);
